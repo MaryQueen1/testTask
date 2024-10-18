@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.log-in {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.log-in__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.log-in__img {
+  display: block;
+  margin: 0 auto 50px;
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+}
+
+.login-form__group {
+  margin-bottom: 20px;
+  position: relative;
+}
+.login-form__label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 0 5px;
+  color: rgb(61, 61, 61);
+  transition: 0.2s ease all;
+}
+.login-form__i-icon {
+  width: 16px;
+}
+.login-form__input {
+  width: 92.5%;
+  padding: 12px 10px;
+  background-color: rgb(229, 229, 229);
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s;
+  border-bottom: 1px solid black;
+}
+.login-form__input:focus {
+  background-color: white;
+  outline: none;
+  border-color: #0062cc;
+}
+.login-form__input:focus ~ .login-form__label {
+  top: -13px;
+  font-size: 12px;
+  color: #007bff;
+}
+.login-form__input:valid ~ .login-form__label, .login-form__input:focus ~ .login-form__label {
+  top: -13px;
+  font-size: 12px;
+  color: #007bff;
+}
+.login-form__i-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+.login-form:last-child .login-form__i-icon {
+  left: auto;
+  right: 10px;
+}
+.login-form__link {
+  display: block;
+  margin: 5px 0 10px;
+  text-align: right;
+  font-size: 0.9em;
+  color: #007bff;
+  text-decoration: none;
+}
+.login-form__link:hover {
+  text-decoration: underline;
+}
+.login-form__submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+.login-form__submit:hover {
+  background-color: #0062cc;
+}/*# sourceMappingURL=style.css.map */
