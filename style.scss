@@ -1,4 +1,4 @@
-$primary-color: #007bff;
+$primary-color: #6a00ff;
 $background-color: #f8f9fa;
 $input-background-color: #e0e0e0;
 $input-border-color: #ced4da;
@@ -110,6 +110,9 @@ body {
   }
 
   &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: $primary-color;
     color: white;
     border: none;
@@ -118,7 +121,13 @@ body {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.2s;
+    position: relative;
 
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+    }
     &:hover {
       background-color: darken($primary-color, 10%);
     }
